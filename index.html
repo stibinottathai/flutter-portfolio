@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stibin Augustine - Flutter Developer</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #6C63FF;
+            --bg-color: #1A1A2E;
+            --text-color: #E0E0E0;
+            --section-bg: #16213E;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            display: flex;
+            min-height: 100vh;
+        }
+        
+        .sidebar {
+            width: 250px;
+            background-color: var(--section-bg);
+            padding: 2rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        
+        .main-content {
+            flex: 1;
+            padding: 2rem;
+            overflow-y: auto;
+        }
+        
+        .profile-img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 1rem;
+            border: 3px solid var(--primary-color);
+        }
+        
+        h1, h2 {
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+        }
+        
+        .section {
+            background-color: var(--section-bg);
+            padding: 1.5rem;
+            margin-bottom: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+        
+        .section:hover {
+            transform: translateY(-5px);
+        }
+        
+        .job {
+            margin-bottom: 1.5rem;
+        }
+        
+        .job-title {
+            font-weight: 600;
+            color: var(--primary-color);
+        }
+        
+        .job-details {
+            font-style: italic;
+            color: #A0A0A0;
+            margin-bottom: 0.5rem;
+        }
+        
+        ul {
+            padding-left: 1.5rem;
+        }
+        
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+        }
+        
+        .skill {
+            background-color: var(--primary-color);
+            color: var(--bg-color);
+            padding: 0.3rem 0.8rem;
+            border-radius: 20px;
+            font-size: 0.9em;
+            transition: transform 0.2s ease;
+        }
+        
+        .skill:hover {
+            transform: scale(1.05);
+        }
+        
+        @media (max-width: 768px) {
+            body {
+                flex-direction: column;
+            }
+            .sidebar {
+                width: 100%;
+                padding: 1rem;
+            }
+            .main-content {
+                padding: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <aside class="sidebar">
+        <img src="https://lh3.googleusercontent.com/a/ACg8ocLYX3Rv8HkJDnaB_lRIzKUOvqiQmKu5ajwnDCEH7mPNi1kBVwO5qQ=s360-c-no" alt="Stibin Augustine" class="profile-img">
+        <h1>Stibin Augustine</h1>
+        <p>Flutter Developer</p>
+    </aside>
+
+    <main class="main-content">
+        <section class="section">
+            <h2>About Me</h2>
+            <p>Flutter developer passionate about innovative mobile solutions</p>
+            <p>📧 stibinaugustine3047@gmail.com</p>
+            <p>📞 8848053964</p>
+            <p>🏠 Mudavanattu (H), Kannur, Kerala, India</p>
+        </section>
+
+        <section class="section">
+            <h2>Work Experience</h2>
+            <div class="job">
+                <div class="job-title">Flutter Developer</div>
+                <div class="job-details">Active Lobby | 10/2022 - Present, Kochi</div>
+                <ul>
+                    <li>Developed and maintained a remittance application, contributing to 40% of project responsibilities.</li>
+                    <li>Led conversion of mobile app to Flutter Web, ensuring unified user experience.</li>
+                    <li>Implemented responsive design for various screen sizes.</li>
+                    <li>Enhanced travel application functionality and conducted unit testing.</li>
+                </ul>
+            </div>
+            <div class="job">
+                <div class="job-title">Junior Flutter Developer</div>
+                <div class="job-details">Tazy Solutions | 01/2022 - 10/2022, Kannur</div>
+                <ul>
+                    <li>Developed event management application using Flutter.</li>
+                    <li>Collaborated with team to implement key features.</li>
+                    <li>Participated in client meetings and designed responsive UI components.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>Education</h2>
+            <p><strong>3 Year Diploma in Computer Engineering</strong><br>
+            NTTF | 06/2014 - 07/2017, Bangalore</p>
+            <p><strong>Higher Secondary</strong><br>
+            Sacred Heart Dwaraka | 06/2011 - 06/2013</p>
+        </section>
+
+        <section class="section">
+            <h2>Skills</h2>
+            <div class="skills">
+                <span class="skill">Flutter</span>
+                <span class="skill">Dart</span>
+                <span class="skill">RESTful APIs</span>
+                <span class="skill">Provider</span>
+                <span class="skill">Bloc</span>
+                <span class="skill">MVVM</span>
+                <span class="skill">Git</span>
+                <span class="skill">Unit Testing</span>
+                <span class="skill">Problem Solving</span>
+                <span class="skill">Learning and Adaptability</span>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>Languages</h2>
+            <p><strong>English:</strong> Professional Working Proficiency</p>
+            <p><strong>Malayalam:</strong> Native or Bilingual Proficiency</p>
+        </section>
+
+        <section class="section">
+            <h2>Interests</h2>
+            <p>Surfing through internet, Basketball, Music</p>
+        </section>
+    </main>
+</body>
+</html>
